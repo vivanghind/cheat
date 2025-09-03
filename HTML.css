@@ -1,0 +1,78 @@
+*{
+    padding-top: 6px;
+    padding-right: 4px;
+    padding-left: 3px;
+    box-sizing: border-box;
+}
+/* Title Nav */
+.main-title {
+  background: #333333;        /* dark green/navy blend */
+  color: #26a69a;
+  text-align: left;
+  padding: 18px 40px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.main-title h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+body{
+    background-color: #b3ffcc;
+    margin: 0px;
+    height: 100vh;
+}
+
+.boilerplate{
+    padding: 5px ;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Arial Black', 'Impact', sans-serif;
+    display: flex;
+    padding-top: 19px;
+    text-indent: 200px;
+}
+
+/* Boilerplate container */
+.boilerpl {
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: #1e1e1e;  /* Dark background */
+  color: #d4d4d4;            /* Default text color */
+  padding: 20px;
+  border-radius: 12px;
+  font-family: "Fira Code", monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  position: relative;
+  overflow-x: auto;
+}
+
+/* Syntax highlighting */
+.boilerpl .tag { color: #569cd6; }        /* <html>, <head>, <body> */
+.boilerpl .attr { color: #9cdcfe; }       /* lang, charset */
+.boilerpl .value { color: #ce9178; }      /* "en", "UTF-8" */
+.boilerpl .text { color: #d4d4d4; }       /* Normal text */
+.boilerpl .comment { color: #6a9955; }    /* <!-- comments --> */
+
+/* Copy button */
+.boilerpl .copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 5px 8px;
+  color: #d4d4d4;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.boilerpl .copy-btn:hover {
+  background: #333;
+}

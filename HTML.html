@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="main-title">
+        <h1>HTML CheatSheet For Beginners</h1>
+    </nav>
+
+    <div class="boilerplate">
+        Boilerplate Code
+    </div>
+
+    <div class="boilerpl">
+  <button class="copy-btn" onclick="copyCode()">📋</button>
+  <code>
+    <span class="tag">&lt;!DOCTYPE html&gt;</span><br>
+    <span class="tag">&lt;html</span> <span class="attr">lang=</span><span class="value">"en"</span><span class="tag">&gt;</span><br>
+    &nbsp;&nbsp;<span class="tag">&lt;head&gt;</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;meta</span> <span class="attr">charset=</span><span class="value">"UTF-8"</span><span class="tag">&gt;</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="tag">&lt;title&gt;</span><span class="text">Document</span><span class="tag">&lt;/title&gt;</span><br>
+    &nbsp;&nbsp;<span class="tag">&lt;/head&gt;</span><br>
+    &nbsp;&nbsp;<span class="tag">&lt;body&gt;</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment">&lt;!-- Body --&gt;</span><br>
+    &nbsp;&nbsp;<span class="tag">&lt;/body&gt;</span><br>
+    <span class="tag">&lt;/html&gt;</span>
+  </code>
+</div>
+<script>
+function copyCode() {
+  const text = document.querySelector(".boilerplate code").innerText;
+  navigator.clipboard.writeText(text);
+  alert("Code copied!");
+}
+</script>
+
+
+    <link rel="stylesheet" href="HTML.css">
+</body>
+</html>

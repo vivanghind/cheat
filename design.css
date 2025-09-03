@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;              /* remove default white gaps */
+  padding: 20px;
+  /* background-color: #333333; choose any color */
+  /* background-color: #009688; */
+  /* background-color: #26a69a; */
+  /* background-color: #003366; */
+  /* background-color: #f9f9f9; */
+  /* background-color: #fff176; */
+  /* background-color: #ff7043; */
+  /* background-color: #6a5acd; */
+  background-color: #b3ffcc;
+  font-family: 'Poppins', sans-serif; /* optional */
+}
+
+.topnav{
+    border-radius: 10px;
+    background-color: #333333;
+    overflow: hidden;
+}
+
+.topnav a{
+    float: left;
+    color: #26a69a;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 21px;
+    justify-content: space-between;
+}
+
+.topnav a:hover{
+    background-color: #dddddddc;
+    color: black;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+
+.topnav a:active{
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav a.split{
+    justify-content: left;
+    transition: 0.3s;
+}
+
+.topnav a.split {
+  float: right;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.big-line{
+    padding-top: px;
+    border: none;
+    height: 3px;
+    background-color: rgb(2, 2, 58);
+    /* background-color: black; */
+    margin: 20px 0px;
+}
+
+.Html{
+
+  display: flex;              /* flexbox for easy centering */
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 20px;
+  padding-top: 100px;
+}
+
+.headline{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .quote{
+    border-left: 5px solid #474746;
+    padding-left: 7px;
+    margin: 7px auto;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1rem;
+    color: black;
+    padding-left: 150px 150px;
+    text-indent: 90px;
+
+} */
+
+.quote-box{
+    padding: 1px;
+}
+.quote{
+    border-left: 4px solid #444;  /* vertical line */
+    padding-left: 6px;           /* space between line and text */
+    margin: 8px 59px;            /* add left/right spacing (90px from left) */
+    font-style: italic;           /* italic */
+    font-weight: bold;            /* bold */
+    font-size: 1.1rem;
+    color: black;                  /* text color */
+  }
+
+  .details{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #444;
+    text-indent: 66px;
+  }
+
+.date{
+    margin-right: 90px;
+}
+
+/* .htmllink{
+    padding-top: 10px;
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    align-items: center;
+    transition: 0.3s;
+    justify-content: center;
+}
+
+.link-box:hover {
+  background: #333;
+  color: #fff;
+  
+} */
+
+
+
+
+
+/* Overview card */
+.overview {
+  max-width: 1000px;           /* card width */
+  margin: 40px auto;           /* centered on page */
+  padding: 28px 36px;          /* inner spacing */
+  background: #e9fff0;         /* soft green card */
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  box-sizing: border-box;
+  color: #0b3d2e;
+}
+
+/* Heading with left vertical line */
+.overview h2 {
+  margin: 0 0 14px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #063723;
+  padding-left: 14px;                 /* space between line and text */
+  border-left: 6px solid #169a63;     /* visible vertical line */
+}
+
+/* Paragraphs */
+.overview p {
+  margin: 0 0 12px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #083a2a;
+}
+
+/* Checklist */
+.overview ul {
+  margin: 12px 0 0;
+  padding-left: 22px; /* leaves room for custom bullets */
+  list-style: none;
+}
+.overview li {
+  position: relative;
+  padding-left: 26px;
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #0a3927;
+}
+.overview li::before {
+  content: "\2713";                 /* check mark */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+  color: #169a63;
+}
+
+/* responsive adjustments */
+@media (max-width: 720px) {
+  .overview {
+    margin: 20px 18px;
+    padding: 18px;
+  }
+  .overview h2 {
+    font-size: 1.25rem;
+    padding-left: 10px;
+    border-left-width: 5px;
+  }
+}
